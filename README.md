@@ -56,6 +56,7 @@ public function actionView($id)
 ```
 
 **Attention!**
+
 `og:image` must be **absolute** url. You can use getters in model class to generate value
 
 For example:
