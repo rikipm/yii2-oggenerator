@@ -1,0 +1,18 @@
+{
+  "name": "rikipm/yii2-oggenerator",
+  "description": "Yii2 OpenGraph tags generator",
+  "keywords": ["yii2", "opengraph"],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/rikipm/yii2-oggenerator",
+    "issues": "https://github.com/rikipm/yii2-oggenerator/issues"
+  },
+  "authors": [
+    {
+      "name": "Riki[m",
+      "homepage": "https://github.com/rikipm"
+    }
+  ],
+  "version": "1.0.0"
+}
