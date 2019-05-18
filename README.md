@@ -30,7 +30,6 @@ Add new component to `components` section of your application config and configu
             'attr_title' => 'title',
             'attr_type' => 'type',
             'attr_image' => 'image',
-            'attr_url' => 'link',
             'attr_description' => 'description',
         ],
 ```
@@ -38,7 +37,9 @@ Add new component to `components` section of your application config and configu
 `attr_` options will determine that attribute from model will be used for content of tag. 
 In example `'og:title'` will assigned `$model->title` value, `'og:url'` will assigned `$model->link` value, etc.
 
-`og:image:type`, `og:image:width` and `og:image:height` tags will be generated automatically.
+`og:url` ,`og:image:type`, `og:image:width` and `og:image:height` tags will be generated automatically.
+
+
 
 In model controller that display your page add `Yii::$app->oggenerator->generate($model);`
 
@@ -53,18 +54,13 @@ public function actionView($id)
 }
 ```
 
-Attention!
-`og:image` and `og:url` must be **absolute** urls. You can use getters in model class to generate values
+**Attention!**
+`og:image` must be **absolute** url. You can use getters in model class to generate value
 
 For example:
 ```
 public getImage()
 {
   return Url::home().'/upload/'.$model->image;
-}
-
-public getLink()
-{
-  return Url::home().$model->slug;
 }
 ``
