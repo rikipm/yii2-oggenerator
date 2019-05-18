@@ -7,7 +7,7 @@ The preferred way to install this extension is through composer.
 Either run
 
 ```
-php composer.phar require "rikipm/yii2-oggenerator" "*"
+php composer.phar require --prefer-dist "rikipm/yii2-oggenerator" "*"
 ```
 or add
 
