@@ -20,7 +20,7 @@ to the require section of your application's `composer.json` file.
 
 Add new component to `components` section of your application config and configure it
 
-```
+```php
 'oggenerator'=>[
             'class' => 'rikipm\oggenerator\oggenerator',
 
@@ -44,7 +44,7 @@ In example `'og:title'` will assigned `$model->title` value, `'og:image'` will a
 In model controller that display your page add `Yii::$app->oggenerator->generate($model);`
 
 For example:
-```
+```php
 public function actionView($id)
 {
   $model = Model::findOne(['id' => $id]);
@@ -58,7 +58,7 @@ public function actionView($id)
 `og:image` must be **absolute** url. You can use getters in model class to generate value
 
 For example:
-```
+```php
 public getImage()
 {
   return Url::home().'/upload/'.$model->image;
