@@ -21,6 +21,5 @@
     "psr-4": {
       "rikipm\\oggenerator\\": ""
     }
-  },
-  "version": "1.0.1"
+  }
 }
