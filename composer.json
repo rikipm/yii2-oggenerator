@@ -10,11 +10,12 @@
   },
   "authors": [
     {
-      "name": "Rikipm",
+      "name": "Riki[m",
       "homepage": "https://github.com/rikipm"
     }
   ],
-  "version": "1.0.0",
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "require": {
+    "yiisoft/yii2": "~2.0.11"
+  },
+  "version": "1.0.0"
 }
