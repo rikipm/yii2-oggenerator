@@ -5,7 +5,7 @@
  * Date: 14.05.2019
  * Time: 21:59
  */
-namespace rikipm\oggenerator\oggenerator;
+namespace rikipm\oggenerator;
 
 use yii\base\Component;
 use Yii;
