@@ -35,7 +35,7 @@ Add new component to `components` section of your application config and configu
         ],
 ```
 
-`attr_` options will determine that attribute from model will be used for content of tag. 
+`attr_` options will determine what attribute from model will be used for content of tag. 
 In example `'og:title'` will assigned `$model->title` value, `'og:image'` will assigned `$model->image` value, etc.
 
 `og:url` ,`og:image:type`, `og:image:width` and `og:image:height` tags will be generated automatically.
