@@ -5,12 +5,11 @@
  * Date: 14.05.2019
  * Time: 21:59
  */
-namespace common\components\og_generator;
+namespace rikipm\oggenerator\oggenerator;
 
 use yii\base\Component;
 use Yii;
 use yii\base\ErrorException;
-use yii\helpers\Url;
 
 class oggenerator extends Component
 {
@@ -27,7 +26,7 @@ class oggenerator extends Component
     public function generate($model)
     {
         Yii::$app->view->registerMetaTag(['property' => 'og:title', 'content' => $model->getAttribute($this->attr_title)]);
-        Yii::$app->view->registerMetaTag(['property' => 'og:type', 'content' => $model->getAttribute($this->attr_type)]); //We dont use static or constant variable from model class for "og:type" header because one model can have multiple types
+        Yii::$app->view->registerMetaTag(['property' => 'og:type', 'content' => $model->getAttribute($this->attr_type)]); //We dont use static or constant variable from model class for "og:type" header because different instances of one model can have multiple types
         Yii::$app->view->registerMetaTag(['property' => 'og:image', 'content' => $model->getAttribute($this->attr_image)]);
         Yii::$app->view->registerMetaTag(['property' => 'og:image:alt', 'content' => $model->getAttribute($this->attr_image_alt)]);
         Yii::$app->view->registerMetaTag(['property' => 'og:url', 'content' => Yii::$app->request->getAbsoluteUrl()]);
