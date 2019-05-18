@@ -30,6 +30,7 @@ Add new component to `components` section of your application config and configu
             'attr_title' => 'title',
             'attr_type' => 'type',
             'attr_image' => 'image',
+            'attr_image_alt' => 'image_alt',
             'attr_description' => 'description',
         ],
 ```
