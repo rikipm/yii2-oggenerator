@@ -63,6 +63,6 @@ For example:
 ```php
 public getImage()
 {
-  return Url::home().'/upload/'.$model->image;
+  return Url::home().'/upload/'.$model->image_file;
 }
 ``
