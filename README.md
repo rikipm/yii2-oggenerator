@@ -42,7 +42,7 @@ In example `'og:title'` will assigned `$model->title` value, `'og:image'` will a
 
 
 
-In model controller that display your page add `Yii::$app->oggenerator->generate($model);`
+In controller that display your page add `Yii::$app->oggenerator->generate($model);`
 
 For example:
 ```php
