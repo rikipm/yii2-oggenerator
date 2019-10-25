@@ -7,7 +7,7 @@ The preferred way to install this extension is through composer.
 Either run
 
 ```
-php composer.phar require --prefer-dist "rikipm/yii2-oggenerator" "*"
+composer require --prefer-dist "rikipm/yii2-oggenerator" "*"
 ```
 or add
 
@@ -22,7 +22,7 @@ Add new component to `components` section of your application config and configu
 
 ```php
 'oggenerator'=>[
-            'class' => 'rikipm\oggenerator\oggenerator',
+            'class' => 'rikipm\oggenerator',
 
             'locale' => 'en-US', //Its "og:locale" tag for all pages
             'site_name' => 'MySite',  //Its "og:site_name" tag for all pages
